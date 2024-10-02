@@ -135,7 +135,7 @@ local ElBlurSource = function()
 				
 				if qualityLevel < 8 then
 					Twen:Create(frame,TweenInfo.new(1),{
-						BackgroundTransparency = 0
+						BackgroundTransparency = 2
 					}):Play()
 				else
 					Twen:Create(frame,TweenInfo.new(1),{
@@ -1493,7 +1493,7 @@ function Library.new(config)
 				TextInt.Name = "TextInt"
 				TextInt.Parent = FunctionToggle
 				TextInt.AnchorPoint = Vector2.new(0.5, 0.5)
-				TextInt.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+				TextInt.BackgroundColor3 = Color3.fromRGB(0,255,255)
 				TextInt.BackgroundTransparency = 1.000
 				TextInt.BorderColor3 = Color3.fromRGB(0, 0, 0)
 				TextInt.BorderSizePixel = 0
@@ -1515,7 +1515,7 @@ function Library.new(config)
 
 				Button.Name = "Button"
 				Button.Parent = FunctionToggle
-				Button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+				Button.BackgroundColor3 = Color3.fromRGB(0, 255, 255)
 				Button.BackgroundTransparency = 1.000
 				Button.BorderColor3 = Color3.fromRGB(0, 0, 0)
 				Button.BorderSizePixel = 0
