@@ -135,7 +135,7 @@ local ElBlurSource = function()
 				
 				if qualityLevel < 8 then
 					Twen:Create(frame,TweenInfo.new(1),{
-						BackgroundTransparency = 2
+						BackgroundTransparency = 0
 					}):Play()
 				else
 					Twen:Create(frame,TweenInfo.new(1),{
@@ -1478,7 +1478,7 @@ function Library.new(config)
 
 				FunctionToggle.Name = "FunctionToggle"
 				FunctionToggle.Parent = Section
-				FunctionToggle.BackgroundColor3 = Color3.fromRGB(0,255,255)
+				FunctionToggle.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
 				FunctionToggle.BackgroundTransparency = 1
 				FunctionToggle.BorderColor3 = Color3.fromRGB(0, 0, 0)
 				FunctionToggle.BorderSizePixel = 0
