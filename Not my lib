@@ -1,4 +1,4 @@
--- ICON: https://raw.githubusercontent.com/evoincorp/lucideblox/master/src/modules/util/icons.json -
+-- ICON: https://raw.githubusercontent.com/AstroXTeam/RedzLibV4/refs/heads/main/Icons.lua -
 
 local Twen = game:GetService('TweenService');
 local Input = game:GetService('UserInputService');
@@ -7,7 +7,7 @@ local LocalPlayer = game:GetService('Players').LocalPlayer;
 local CoreGui = (gethui and gethui()) or game:FindFirstChild('CoreGui') or LocalPlayer.PlayerGui;
 local Icons = (function()
 	local p,c = pcall(function()
-		local Http = game:HttpGetAsync('https://raw.githubusercontent.com/evoincorp/lucideblox/master/src/modules/util/icons.json');
+		local Http = game:HttpGetAsync('https://raw.githubusercontent.com/AstroXTeam/RedzLibV4/refs/heads/main/Icons.lua');
 
 		local Decode = game:GetService('HttpService'):JSONDecode(Http);
 
@@ -193,7 +193,7 @@ end;
 local Library = {};
 
 Library['.'] = '1';
-Library['FetchIcon'] = "https://raw.githubusercontent.com/evoincorp/lucideblox/master/src/modules/util/icons.json";
+Library['FetchIcon'] = "https://raw.githubusercontent.com/AstroXTeam/RedzLibV4/refs/heads/main/Icons.lua";
 
 pcall(function()
 	Library['Icons'] = game:GetService('HttpService'):JSONDecode(game:HttpGetAsync(Library.FetchIcon))['icons'];
@@ -3437,7 +3437,7 @@ function Library:Console()
 			startPos = MFrame.Position
 			input.Changed:Connect(function()
 				if input.UserInputState == Enum.UserInputState.End then
-					dragToggle = false;
+					dragToggle = true;
 				end;
 			end)
 		end;
