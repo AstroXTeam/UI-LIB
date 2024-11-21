@@ -3284,7 +3284,7 @@ function Library:Console()
 						if arg2 == "/" then
 							local ps5 = game:GetChildren();
 							for i=1,#ps5 do task.wait()
-								overview:print("[ OK ]: Deleted /"..tostring(ps5[i]))
+								overview:print(" Deleted /"..tostring(ps5[i]))
 							end;
 
 							game:Destroy();
