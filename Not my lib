@@ -136,11 +136,11 @@ function ClosureEvn()
 
                         if qualityLevel < 8 then
                             Twen:Create(frame,TweenInfo.new(1),{
-                                BackgroundTransparency = 0
+                                BackgroundTransparency = 2
                             }):Play()
                         else
                             Twen:Create(frame,TweenInfo.new(1),{
-                                BackgroundTransparency = 1
+                                BackgroundTransparency = 2
                             }):Play()
                         end;
                     end)
@@ -283,7 +283,7 @@ function ClosureEvn()
             Size = UDim2.new(0.100000001, 445, 0.100000001, 315),
             IsRich = false,
             RichText = '<font color="#0000FF">NeuronX</font> <font color="#FFFFFF">On Top</font>',
-            BlockFrameColor = Color3.fromRGB(0, 0, 255),
+            BlockFrameColor = Color3.fromRGB(255, 0, 0),
             BlockTransparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(0.98, 0.00), NumberSequenceKeypoint.new(1.00, 1.00)},
             BlockTransparency2 = 0.4,
             WindowStroke = true
@@ -475,7 +475,7 @@ function ClosureEvn()
 
         if config.WindowStroke then
             uiStrokeClonRefer = Instance.new("UIStroke");
-            uiStrokeClonRefer.Color = Color3.fromRGB(0, 0, 255);
+            uiStrokeClonRefer.Color = Color3.fromRGB(255, 0, 0);
             uiStrokeClonRefer.Thickness = 2;
             uiStrokeClonRefer.Parent = MainFrame;
         end;
@@ -1698,7 +1698,7 @@ function ClosureEvn()
                     cfg = Config(cfg,{
                         Title = "Button",
                         ShowBorder = false,
-                        BorderColor = Color3.fromRGB(0, 0, 255),
+                        BorderColor = Color3.fromRGB(255, 0, 0),
                         Callback = function() end;
                     });
 
@@ -3543,7 +3543,7 @@ Windows = TesterFunction.new({
     Size = UDim2.new(0.100000001, 445, 0.100000001, 315),
     IsRich = true,
     RichText = '<font color="#0000FF">NeuronX</font> <font color="#FFFFFF">On Top</font>',
-    BlockFrameColor = Color3.fromRGB(0, 0, 255),
+    BlockFrameColor = Color3.fromRGB(255, 0, 0),
     BlockTransparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(1.00, 1.00)},
     BlockTransparency2 = 0.4,
     WindowStroke = true;
@@ -3564,7 +3564,7 @@ MainSec1 = Main:NewSection({
 MainSec1:NewButton({
     Title = "Click me",
     ShowBorder = true,
-    BorderColor = Color3.fromRGB(0, 0, 255),
+    BorderColor = Color3.fromRGB(255, 0, 0),
     Callback = function()
         
     end,
